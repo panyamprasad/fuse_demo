@@ -1,0 +1,350 @@
+<div class="absolute inset-0 flex flex-col min-w-0 overflow-y-auto" cdkScrollable>
+    <!-- Main -->
+    <div class="flex flex-col w-4/4 pl-8">
+        <!-- Header -->
+        <div class="flex items-center h-16 px-4 py-2 border-b">
+            <a [routerLink]="['..']" mat-icon-button>
+                <mat-icon [svgIcon]="'heroicons_outline:arrow-narrow-left'"></mat-icon>
+            </a>
+            <div class="ml-1 text-lg font-medium">Partners</div>
+        </div>
+        <!-- Form -->
+        <form [formGroup]="">
+            <div class="w-full">
+                <div class="text-xl">Personal Information</div>
+            </div>
+            <div class="grid sm:grid-cols-4 gap-2 w-full mt-4">
+                <!-- Email -->
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner ID</mat-label>
+                        <input [formControlName]="'email'" matInput>
+                    </mat-form-field>
+                </div>
+                <!-- Phone -->
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Name</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Name 2</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Address 1</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Address 2</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>City/ST/Zip</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Select One</mat-label>
+                        <mat-select [formControlName]="'country'">
+                            <mat-option [value]="'usa'">AK</mat-option>
+                            <mat-option [value]="'canada'">AL</mat-option>
+                            <mat-option [value]="'mexico'">AR</mat-option>
+                            <mat-option [value]="'france'">AZ</mat-option>
+                            <mat-option [value]="'germany'">CA</mat-option>
+                            <mat-option [value]="'italy'">CO</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Contact 1</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Title</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label> Phone 1</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Phone 2</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Email</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Contact 2</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Title</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Phone 1</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Phone 2</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Email</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="mt-4 mb-2 border-t"></div>
+            <div class="w-full">
+                <div class="text-xl">Finance Information</div>
+            </div>
+            <div class="grid sm:grid-cols-4 gap-4 w-full mt-4">
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Payment Method</mat-label>
+                        <mat-select [formControlName]="'payment'">
+                            <mat-option [value]="'ach'">ACH</mat-option>
+                            <mat-option [value]="'eft'">EFT</mat-option>
+                            <mat-option [value]="'check'">Check</mat-option>
+                            <mat-option [value]="'transfer'">Transfer</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!-- Phone -->
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Referrer ID</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Programn ID</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'decision'">
+                        Send Decisions
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Number</mat-label>
+                        <mat-select [formControlName]="'payment'">
+                            <mat-option [value]="'ach'">SELF</mat-option>
+                            <mat-option [value]="'eft'">123 - Partner Name</mat-option>
+                            <mat-option [value]="'check'">10000- Direct</mat-option>
+                            <mat-option [value]="'transfer'">10001- Lease Plan</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Sales Channel</mat-label>
+                        <mat-select [formControlName]="'payment'">
+                            <mat-option [value]="'avis'">AVIS</mat-option>
+                            <mat-option [value]="'eft'">Enterprise/GM</mat-option>
+                            <mat-option [value]="'check'">Fleet</mat-option>
+                            <mat-option [value]="'transfer'">Flexco</mat-option>
+                            <mat-option [value]="'check'">Lease Buyout</mat-option>
+                            <mat-option [value]="'transfer'">Refi</mat-option>
+                            <mat-option [value]="'check'">Stand Alone Product</mat-option>
+                            <mat-option [value]="'transfer'">Test</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Pmt (Cash)</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Include in Payoff
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Pmt (Fin)</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Include in Payoff
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>eDoc Fee Amt</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Include in Payoff
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Add-on Comm</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label> Cash Comm</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Title Service Fee Amt</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Doc Fee Override
+                    </mat-checkbox>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="mt-4 mb-2 border-t"></div>
+            <div class="w-full">
+                <div class="text-xl">Reporting Information</div>
+            </div>
+            <div class="grid sm:grid-cols-4 gap-4 w-full mt-4">
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Report Class</mat-label>
+                        <mat-select [formControlName]="'payment'">
+                            <mat-option [value]="'refinance'">Refinance</mat-option>
+                            <mat-option [value]="'oem'">OEM</mat-option>
+                            <mat-option [value]="'fleet'">Fleet</mat-option>
+                            <mat-option [value]="'rental'">Rental</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Prospect Followup Days</mat-label>
+                        <input [formControlName]="'phone'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>API Key</mat-label>
+                        <input [formControlName]="'api'" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Re/Generate Key
+                    </mat-checkbox>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-2 w-full mt-4">
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Active
+                    </mat-checkbox>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Partner Survey?
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Partner Servery Link</mat-label>
+                        <input [formControlName]="'api'" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-2 w-full mt-4">
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Auto-Prequal?
+                    </mat-checkbox>
+                </div>
+                <div class="inline-flex items-end justify-between w-full mt-1.5">
+                    <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                        Facebook Survey?
+                    </mat-checkbox>
+                </div>
+                <div class="sm:col-span-1">
+                    <mat-form-field class="fuse-mat-no-subscript w-full">
+                        <mat-label>Facebook Servery Link</mat-label>
+                        <input [formControlName]="'api'" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-2 w-full mt-4">
+
+                <div class="flex">
+                    <mat-form-field class="w-1/3 pr-2">
+                        <mat-checkbox [color]="'primary'" [formControlName]="'payoff'">
+                            BBB Survey?
+                        </mat-checkbox>
+                    </mat-form-field>
+                    <mat-form-field class="w-2/3 pl-2">
+                        <mat-label>BBB Servery Link</mat-label>
+                        <input [formControlName]="'api'" matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-2 w-full mt-4">
+                <div class="flex flex-col p-1">
+                    <mat-form-field class="fuse-mat-textarea flex-auto">
+                        <mat-label>Comments</mat-label>
+                        <textarea matInput [rows]="3"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="mt-11 mb-10 border-t"></div>
+            <!-- Actions -->
+            <div class="flex items-center justify-end">
+                <button class="ml-4" mat-flat-button type="button" [color]="'primary'">Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
